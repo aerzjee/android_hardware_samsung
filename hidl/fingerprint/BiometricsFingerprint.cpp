@@ -109,6 +109,9 @@ Return<void> BiometricsFingerprint::onFingerUp() {
     return Void();
 }
 
+Return<void> BiometricsFingerprint::onHideUdfpsOverlay() { return Void(); }
+Return<void> BiometricsFingerprint::onShowUdfpsOverlay() { return Void(); }
+    
 Return<RequestStatus> BiometricsFingerprint::ErrorFilter(int32_t error) {
     switch (error) {
         case 0:
